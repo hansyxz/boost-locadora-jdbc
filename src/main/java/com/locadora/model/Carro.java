@@ -45,6 +45,7 @@ public class Carro {
         return "Id: " + id + "\n" +
                 "Marca: " + marca + "\n" +
                 "Modelo: " + modelo + "\n" +
+                "Placa: " + placa + "\n" +
                 "Valor Diaria: R$ " + valorDiaria + "/dia\n" +
                 "Ano de Lancamento: " + anoDeLancamento + "\n" +
                 "Disponivel: " + (disponivel ? "Sim" : "Não");
