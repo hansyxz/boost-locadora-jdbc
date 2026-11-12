@@ -1,7 +1,15 @@
 package com.locadora.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "carros")
 public class Carro {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
     private String marca;
     private String modelo;
     private String placa;
@@ -9,16 +17,7 @@ public class Carro {
     private Integer anoDeLancamento;
     private Boolean disponivel;
 
-    public Carro(Integer id, String marca, String modelo, String placa, Double valorDiaria,
-                 Integer anoDeLancamento, Boolean disponivel) {
-        this.id = id;
-        this.marca = marca;
-        this.modelo = modelo;
-        this.placa = placa;
-        this.valorDiaria = valorDiaria;
-        this.anoDeLancamento = anoDeLancamento;
-        this.disponivel = disponivel;
-    }
+    public Carro() {}
 
     public Carro(String marca, String modelo, String placa, Double valorDiaria,
                  Integer anoDeLancamento, Boolean disponivel) {
