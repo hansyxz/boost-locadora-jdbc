@@ -14,8 +14,8 @@ public class Cliente {
     private String cpf;
     private Integer idade;
 
-    @Column(name = "tempo_aluguel_dias")
-    private Integer tempoAluguelDias;
+//    @Column(name = "tempo_aluguel_dias")
+//    private Integer tempoAluguelDias;
 
     private String telefone;
 
@@ -25,7 +25,7 @@ public class Cliente {
         this.nome = nome;
         this.cpf = cpf;
         this.idade = idade;
-        this.tempoAluguelDias = tempoAluguelDias;
+        //this.tempoAluguelDias = tempoAluguelDias;
         this.telefone = telefone;
     }
 
@@ -33,7 +33,7 @@ public class Cliente {
     public String getNome() { return nome; }
     public String getCpf() { return cpf; }
     public Integer getIdade() { return idade; }
-    public Integer getTempoAluguelDias() { return tempoAluguelDias; }
+    //public Integer getTempoAluguelDias() { return tempoAluguelDias; }
     public String getTelefone() { return telefone; }
 
     @Override
@@ -41,7 +41,7 @@ public class Cliente {
         return "Id: " + id + "\n" +
                 "Nome: " + nome + "\n" +
                 "CPF: " + cpf + "\n" +
-                "Tempo de aluguel em dias: " + tempoAluguelDias + "\n" +
+                //"Tempo de aluguel em dias: " + tempoAluguelDias + "\n" +
                 "Telefone: "+ telefone;
     }
 }

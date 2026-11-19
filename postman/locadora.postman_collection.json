@@ -1,0 +1,139 @@
+{
+  "info": {
+    "_postman_id": "b68ced65-af19-4cf4-a41f-b479ad9dde1d",
+    "name": "locadora",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "35114167"
+  },
+  "item": [
+    {
+      "name": "carros",
+      "item": [
+        {
+          "name": "/carros",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/carros",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "carros"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/carros",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"marca\": \"Honda\",\r\n    \"modelo\": \"Civic\",\r\n    \"placa\": \"YYY-2222\",\r\n    \"valorDiaria\": 259.9,\r\n    \"anoDeLancamento\": 2025,\r\n    \"disponivel\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/carros",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "carros"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/carros/{id}",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"valorDiaria\": 250.0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/carros/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "carros",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/carros/{id}",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/carros/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "carros",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "/carros/{id}",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/carros/13",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "carros",
+                "13"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "clientes",
+      "item": []
+    },
+    {
+      "name": "alugueis",
+      "item": []
+    }
+  ]
+}
